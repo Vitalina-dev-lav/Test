@@ -10,15 +10,15 @@
 // 32679 -> 6
 
 Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
-string Digit = Convert.ToString(number);
+string numDigit = Convert.ToString(num);
 
-if (Digit.Length > 2)
-{
-    Console.WriteLine( $"Третье число: { Digit}");
+if (numDigit.Length > 2)
+{ 
+Console.WriteLine ( $"{numDigit[2]}");
 }
-else
+else 
 {
     Console.WriteLine("Третьей цифры нет");
 }
