@@ -16,3 +16,4 @@ int secondDigit = number % 10; //8
 
 if (firtDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа --> {firstDigit}");
 else Console.WriteLine($"Наибольшая цифра числа --> {secondDigit}");
+
