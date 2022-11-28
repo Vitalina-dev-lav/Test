@@ -6,14 +6,18 @@
 // 7 -> да
 // 1 -> нет
 
-Console.Write("Введите день недели: ");
-int Day = int.Parse(Console.ReadLine());
+Console.Write("Введите цифру обозначающую день недели: ");
+int   date=Convert.ToInt32(Console.ReadLine());
 
-if (Day >= 1 && Day <= 5)
+if (date  == 6 || date  == 7)
 {
-    Console.Write("Нет");
+    Console.Write("Выходной день");
 }
-else if (Day >= 6 && Day <=7)
+else if (date < 1 || date > 7)
 {
-    Console.Write("Да");
+    Console.Write("Вы ввели несуществующий день недели");
+}
+else
+{
+    Console.Write("Будний день");
 }
