@@ -12,7 +12,7 @@ int ya = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите точку XB: ");
 int xb = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите точку YB: ");
-int ya = Convert.ToInt32(Console.ReadLine());
+int yb = Convert.ToInt32(Console.ReadLine());
 
 double Distance(int xa, int ya, int xb, int yb)
 {
@@ -22,6 +22,7 @@ double Distance(int xa, int ya, int xb, int yb)
     return result;
 }
 
-double res = Distance(xa, ya, xb, yb);
+double res = Distance(xa, ya, xb, yb );
+
 double resRound = Math.Round(res, 2, MidpointRounding.ToZero);
 Console.WriteLine(resRound);
