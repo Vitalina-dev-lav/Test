@@ -16,13 +16,19 @@
 // if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа --> {firstDigit}");
 // else Console.WriteLine($"Наибольшая цифра числа --> {secondDigit}");
 
-int MaxDigit(int num) // int num = number
+internal class Program
 {
-    int firstDigit = num / 10; //7
-    int secondDigit = num % 10; //8
-    if (firstDigit > secondDigit) return firstDigit;
-    return secondDigit;
-}
+    private static void Main(string[] args)
+    {
+        int MaxDigit(int num) // int num = number
+        {
+            int firstDigit = num / 10; //7
+            int secondDigit = num % 10; //8
+            if (firstDigit > secondDigit) return firstDigit;
+            return secondDigit;
+        }
 
-int maxDigit = MaxDigit(num);
-Console.WriteLine($"Наибольшая цифра числа --> {maxDigit}");
+        int maxDigit = MaxDigit(num);
+        Console.WriteLine($"Наибольшая цифра числа --> {maxDigit}");
+    }
+}
