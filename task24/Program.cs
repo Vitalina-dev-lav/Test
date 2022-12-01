@@ -8,7 +8,7 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-//int sum = 0;
+// int sum = 1234567;
 
 int SumDigits(int num)
 {
@@ -19,9 +19,9 @@ int SumDigits(int num)
     }
     return sum;
 }
-if (number > 0)
+if(number > 0)
 {
-int SumDigits = SumDigits(number);
+int sumDigits = SumDigits(number);
 Console.WriteLine($"Сумма чисел от 1 до {number} = {sumDigits}");
 }
 else System.Console.WriteLine("Требуется ввести натуральное число");
