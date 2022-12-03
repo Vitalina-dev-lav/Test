@@ -31,4 +31,4 @@ double x = X(b1, k1, b2, k2);
 double y = Y(b1, k1);
 x = Math.Round(x, 2);
 y = Math.Round(y, 2);
-Console.WriteLine($"Точка пересечения двух прямых ----> ({x},{y})");
+Console.WriteLine($"Точка пересечения двух прямых -> ({x},{y})");

@@ -13,7 +13,7 @@ int[] PrintNumbers(int num)
     int[] arr = new int[num];
     for (int i = 0; i < num; i++)
     {
-        Console.WriteLine($"Введите элемент {i} ----> ");
+        Console.WriteLine($"Введите элемент {i} -> ");
         arr[i] = Convert.ToInt32(Console.ReadLine());
     }
     return arr;
@@ -31,4 +31,4 @@ int Count(int[] arr)
 
 int[] array = PrintNumbers(numbers);
 
-Console.WriteLine($"Число элементов больше нуля ----> {Count(array)}");
+Console.WriteLine($"Число элементов больше нуля -> {Count(array)}");

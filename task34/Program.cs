@@ -41,4 +41,4 @@ int EvenNumber(int[] arr)
 }
 
 int evenNumber = EvenNumber(array);
-Console.WriteLine($"Количество четных чисел в массиве ----> {evenNumber}");
+Console.WriteLine($"Количество четных чисел в массиве -> {evenNumber}");

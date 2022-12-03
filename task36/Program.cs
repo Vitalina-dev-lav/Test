@@ -27,7 +27,7 @@ void ArrowPrint(int[] arr)
     }
     Console.Write("]");
 }
-Console.Write("Выводим массив на печать ----> ");
+Console.Write("Выводим массив на печать ");
 int[] array = NewArrowRandom(10, 0, 9);
 ArrowPrint(array);
 
@@ -43,4 +43,4 @@ int OddElements(int[] arr)
 }
 
 int oddNumber = OddElements(array);
-Console.WriteLine($" Сумма нечетных элементов массива равна ----> {oddNumber}");
+Console.WriteLine($" Сумма нечетных элементов массива равна -> {oddNumber}");
