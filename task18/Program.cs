@@ -2,7 +2,7 @@
 // заданному номеру четверти, показывает диапазон
 // возможных координат точек в этой четверти (x и y).
 
-Console.WriteLine("Укажите номер четверти: ");
+Console.Write("Укажите номер четверти: ");
 string quarter = Console.ReadLine();
 
 string Range(int quarter1)

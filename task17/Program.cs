@@ -20,6 +20,7 @@ int Quarter (int xc, int yc)
 }
 
 int quarter = Quarter(x, y);
+int Quarter = quarter;
 string result = quarter > 0
      ? $"Указанные координаты соотвествует четверти -> {quarter}"
      : "Введены некоректные координаты";
