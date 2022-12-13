@@ -6,4 +6,6 @@
 // 78 -> 2
 // 89126 -> 5
 
-
+Console.Write("Введите целое число: ");
+int num = int.Parse(Console.ReadLine());
+Console.WriteLine($"Количество цифр в числе -> {(int)Math.Log10(num) + 1}");

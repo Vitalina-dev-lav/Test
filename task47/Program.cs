@@ -7,34 +7,30 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-double[,] GreatMatrixRndDouble(int rows, int colums, double min, double max)
+Console.WriteLine("Задайте количество строк двумерного массива:");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Задайте количество столбцов двумерного массива:");
+int n = Convert.ToInt32(Console.ReadLine());
+double[,] twoDimArray = new double[m, n];
+Random rnd = new Random();
+void PrintArray(double[,] matr)
 {
-    double[,] matrix = new double [rows];
-    Random rnd = new Random();
-
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix [i, j] = Math.Round(rnd.NextDouble() * (max - min) + min, 2);
-        }
-    }
-    return ;
-}
-
-void PrintMatrix (double matrix )
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        Console.Write("[");
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (j < matrix.GetLength(1) -1 ) Console.Write($"{matrix[i,j], 6}, ");
-            else Console.Write($"{matrix[i,j], 6} ");
-        }
-        Console.WriteLine("]");
+        for (int j = 0; j < n; j++)
+        { Console.Write($"{matr[i, j]} "); }
+        Console.WriteLine();
     }
 }
 
-double[,] matrixArray = GreatMatrixRndDouble(5, 9, -1.5, 3.19);
-PrintMatrix(matrixArray);
+void FillArray(double[,] matr)
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        { matr[i, j] = Convert.ToDouble(rnd.Next(-100, 100) / 10.0); }
+    }
+}
+FillArray(twoDimArray);
+Console.WriteLine();
+PrintArray(twoDimArray);
