@@ -47,8 +47,7 @@ int [,] ChangeStrngToColumn(int[,] matrix)
 
 int stringsize = 0;
 int columsize = 0;
-int stringIndex = 0;
-int columIndex = 0;
+
 while (stringsize <= 0 || columsize <= 0 || columsize != stringsize)
 {
     Console.WriteLine($"Введите количество сторок");
